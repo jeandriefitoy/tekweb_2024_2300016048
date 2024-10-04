@@ -1,1 +1,2 @@
-# tekweb_2024_2300016048
+# Repository Tugas Teknologi Web
+# Nama: Jeandrie Fitoy
