@@ -1,0 +1,88 @@
+body {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  font-family: "Poppins";
+}
+
+h1 {
+  color: #006bff;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #006bff;
+}
+
+.container {
+  display: block;
+}
+
+#img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 120px;
+  height: 120px;
+  background-image: url(saya2.jpeg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 107, 255);
+}
+
+.aboutme {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 640px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.aboutme p {
+  text-align: justify;
+  text-indent: 3em;
+}
+
+.myproject {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 640px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.myproject ul {
+  list-style: none;
+  padding: 0;
+}
+
+.myproject li {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border-left: 5px solid rgb(0, 107, 255);
+}
+
+.contact {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 640px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
