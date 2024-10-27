@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ToDoList">
+        <h2>My To-Do List</h2>
+        <div class="addtask">
+          <input type="text" id="newTask" placeholder="Add a new task..." />
+          <i class="fa-solid fa-square-plus" id="addButton"></i>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+      <div class="setting">
+        <h4>Change Appearance</h4>
+        <div class="fonting">
+          <div class="fontsizing">
+            <div class="fontslide">
+              <input type="range" id="fontslider" min="8" max="40" value="16" />
+              <span id="sizevalue">16px</span>
+            </div>
+            <label for="change font size">Change Font Size</label>
+          </div>
+          <div class="fontstyling">
+            <label for="fontStyleSelect">Font Style: </label>
+            <select id="fontStyleSelect">
+              <option value="Roboto Mono">Roboto Mono</option>
+              <option value="sans-serif">sans-serif</option>
+              <option value="Source Code Pro">Source Code Pro</option>
+              <option value="Poppins">Poppins</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Tiny5">Tiny5</option>
+            </select>
+          </div>
+        </div>
+        <div class="coloring">
+          <div class="bground">
+            <input type="color" id="bgcolor" />
+            <label for="Change Bg" id="change bg"
+              >Change Background Color</label
+            >
+          </div>
+          <div class="DoLmode">
+            <label id="DoL">
+              <input type="checkbox" id="darkModeToggle" />
+              <span class="sliderDoL"></span>
+            </label>
+            <span id="spanDoL">Dark Mode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script3.js"></script>
+  </body>
+</html>
