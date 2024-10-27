@@ -1,0 +1,272 @@
+body {
+  font-family: Roboto Mono;
+  font-size: 16px;
+  background-color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-icon,
+.delete-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  width: 25em;
+  min-width: 370px;
+  max-width: 666px;
+  margin: 0 auto;
+  background-color: white;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ToDoList {
+  border-bottom: 2px solid black;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.addtask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#newTask {
+  border: none;
+  outline: none;
+  width: 15.625em;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+
+i {
+  font-size: 25px;
+}
+
+#taskList {
+  padding: 0;
+  list-style: none;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  max-width: 100%;
+}
+
+#taskList li span {
+  flex-grow: 1;
+  margin-left: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+h4 {
+  text-align: center;
+}
+
+.fonting {
+  display: flex;
+  flex-direction: column;
+}
+
+.fontsizing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.fontslide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 8px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.fontstyling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.coloring {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+input[type="color"] {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.DoLmode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.DoLmode {
+  display: flex;
+  align-items: center;
+}
+
+#DoL {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#DoL input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderDoL {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.sliderDoL::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .sliderDoL {
+  background-color: #121212;
+}
+
+input:checked + .sliderDoL::before {
+  transform: translateX(26px);
+}
+
+.sliderDoL {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#spanDoL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
